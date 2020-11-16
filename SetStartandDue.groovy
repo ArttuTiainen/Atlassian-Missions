@@ -1,10 +1,4 @@
-  
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoUnit
-import static java.util.Calendar.*
-
-def pattern = "yyyy-MM-dd"
+def pattern = "yyyy-MM-dd" //Time format
 
 //Define offset how many days you want to push issues forward
 int offset = 5
@@ -113,8 +107,5 @@ if(oldDueDate==null){
         ])
         .asString()
         }
-
-
-
 
 }
